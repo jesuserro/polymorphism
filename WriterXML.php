@@ -11,10 +11,10 @@ namespace poly_write;
 use poly_base\Article;
 
 /**
- * XMLWrite class implementation
+ * WriterXML class implementation
  * This class implementing the Writer interface will be sure to have write() method.
  */
-class XMLWriter implements Writable
+class WriterXML implements Writable
 {
     public function write(Article $obj)
     {

@@ -8,15 +8,15 @@
 
 namespace poly_base;
 
-require_once 'JSONWriter.php';
-require_once 'XMLWriter.php';
+require_once 'WriterJSON.php';
+require_once 'WriterXML.php';
 
 
 class Factory
 {
     public static function getWriter( $type='JSON' )
     {
-        $class = 'poly_write\\' .$type . 'Writer';
+        $class = 'poly_write\\'.'Writer'.$type;
         if (class_exists($class)) {
             return new $class();
         }
