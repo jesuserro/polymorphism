@@ -24,5 +24,7 @@ Usage:
 2.- In your browser:
 ```
     http://localhost/polymorphism/
+    http://localhost/polymorphism/?format=XML
+    http://localhost/polymorphism/?format=JSON
 ```
 

@@ -5,10 +5,23 @@ require_once 'Factory.php';
 use poly_base\Article;
 use poly_base\Factory;
 
+$format = (isset($_GET['format']) ? $_GET['format'] : 'JSON');
+
 try {
     $article = new Article('Polymorphism', 'Steve', time(), 0);
-    $writer = Factory::getWriter('JSON');
-    echo $writer->write($article);
+    $writer = Factory::getWriter($format);
+    $response = $writer->write($article);
+
+    switch($format){
+        case 'JSON':
+            header("Content-type: application/json; charset=utf-8");
+            break;
+        case 'XML';
+            header("Content-Type: application/xml; charset=utf-8");
+            break;
+    }
+    echo $response;
+
 }catch(Exception $e){
     echo $e->getMessage();
 }
