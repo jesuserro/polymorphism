@@ -6,7 +6,7 @@
  * Time: 10:08
   */
 
-namespace poly_base;
+namespace Jei\Base;
 
 require_once 'WriterJSON.php';
 require_once 'WriterXML.php';
@@ -16,7 +16,7 @@ class Factory
 {
     public static function getWriter( $type='JSON' )
     {
-        $class = 'poly_write\\'.'Writer'.$type;
+        $class = 'Jei\Write\\'.'Writer'.$type;
         if (class_exists($class)) {
             return new $class();
         }

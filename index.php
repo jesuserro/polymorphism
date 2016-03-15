@@ -2,8 +2,8 @@
 require_once 'Article.php';
 require_once 'Factory.php';
 
-use poly_base\Article;
-use poly_base\Factory;
+use Jei\Base\Article;
+use Jei\Base\Factory;
 
 $format = (isset($_GET['format']) ? $_GET['format'] : 'JSON');
 

@@ -6,7 +6,7 @@
  * Time: 9:54
  */
 
-namespace poly_base;
+namespace Jei\Base;
 
 class Article
 {

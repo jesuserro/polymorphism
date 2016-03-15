@@ -6,11 +6,11 @@
  * Time: 9:59
  */
 
-namespace poly_write;
+namespace Jei\Write;
 
 require_once 'Writable.php';
 
-use poly_base\Article;
+use Jei\Base\Article;
 
 /**
  * WriterJSON class implementation

@@ -6,9 +6,9 @@
  * Time: 9:57
  */
 
-namespace poly_write;
+namespace Jei\Write;
 
-use poly_base\Article;
+use Jei\Base\Article;
 
 
 interface Writable
