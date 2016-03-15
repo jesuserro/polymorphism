@@ -19,7 +19,7 @@ class XMLWriter implements Writable
     public function write(Article $obj)
     {
         $ret = '<article>';
-        $ret .= '<article>' . $obj->getTitle() . '</title>';
+        $ret .= '<title>' . $obj->getTitle() . '</title>';
         $ret .= '<author>' . $obj->getAuthor() . '</author>';
         $ret .= '<date>' . $obj->getDate() . '</date>';
         $ret .= '<category>' . $obj->getCategory() . '</category>';
