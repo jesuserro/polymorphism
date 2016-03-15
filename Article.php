@@ -45,6 +45,12 @@ class Article
 
     public function toArray()
     {
-        return (array) $this;
+        //return (array) $this;
+        return array(
+            'title' => $this->getTitle(),
+            'author' => $this->getAuthor(),
+            'date' => $this->getDate(),
+            'category' => $this->getCategory()
+        );
     }
 }
