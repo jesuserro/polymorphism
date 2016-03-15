@@ -13,6 +13,6 @@ use poly_base\Article;
 
 interface Writable
 {
-    // $obj is a type hint to restirct the type of the argument
+    // $obj is a type hint to restrict the type of the argument
     public function write(Article $obj);
 }
