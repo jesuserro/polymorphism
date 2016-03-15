@@ -10,7 +10,7 @@ namespace Jei\Base;
 
 require_once 'WriterJSON.php';
 require_once 'WriterXML.php';
-
+require_once 'Exception.php';
 
 class Factory
 {
