@@ -1,5 +1,5 @@
 # Understanding and Applying Polymorphism in PHP
-Based on http://code.tutsplus.com/tutorials/understanding-and-applying-polymorphism-in-php--net-14362
+Based on great Steve Guidetti's article: http://code.tutsplus.com/tutorials/understanding-and-applying-polymorphism-in-php--net-14362
 
 ##Important knowledge on *PHP* oriented object programming.##
 
