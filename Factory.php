@@ -8,24 +8,19 @@
 
 namespace poly_base;
 
-use poly_write\JSONWriter;
+require_once 'JSONWriter.php';
+require_once 'XMLWriter.php';
+
 
 class Factory
 {
     public static function getWriter( $type='JSON' )
     {
-        try {
-            // construct our class name and check its existence
-            $class = 'poly_write\\' .$type . 'Writer';
-            require_once 'JSONWriter.php';
-            if (class_exists($class)) {
-                // return a new Writer object
-                return new $class();
-            }
-            // otherwise we fail
-            //throw new Exception('Unsupported format '.$type);
-        }catch(Exception $e){
-            return $e->getMessage();
+        $class = 'poly_write\\' .$type . 'Writer';
+        if (class_exists($class)) {
+            return new $class();
         }
+        // otherwise we fail
+        throw new Exception('Unsupported format '.$type);
     }
 }
