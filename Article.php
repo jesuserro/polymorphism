@@ -25,12 +25,12 @@ class Article
 
     public function getTitle()
     {
-        return $this->title;
+        return $this->_title;
     }
 
     public function getAuthor()
     {
-        return $this->title;
+        return $this->_author;
     }
 
     public function getDate()
