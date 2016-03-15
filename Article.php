@@ -10,24 +10,38 @@ namespace poly_base;
 
 class Article
 {
-    private $title;
-    private $author;
-    private $date;
-    private $category;
+    private $_title;
+    private $_author;
+    private $_date;
+    private $_category;
 
     public function __construct($title, $author, $date, $category = 0)
     {
-        $this->title = $title;
-        $this->author = $author;
-        $this->date = $date;
-        $this->category = $category;
+        $this->_title = $title;
+        $this->_author = $author;
+        $this->_date = $date;
+        $this->_category = $category;
     }
 
     public function getTitle()
     {
         return $this->title;
     }
-    //...other getters defined here...
+
+    public function getAuthor()
+    {
+        return $this->title;
+    }
+
+    public function getDate()
+    {
+        return $this->_date;
+    }
+
+    public function getCategory()
+    {
+        return $this->_category;
+    }
 
     public function toArray()
     {

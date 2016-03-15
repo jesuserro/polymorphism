@@ -8,11 +8,11 @@
 
 namespace poly_write;
 
-use poly_base;
+use poly_base\Article;
 
 
 interface Writable
 {
     // $obj is a type hint to restirct the type of the argument
-    public function write(poly_base\Article $obj);
+    public function write(Article $obj);
 }

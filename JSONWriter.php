@@ -10,7 +10,7 @@ namespace poly_write;
 
 require_once 'Writable.php';
 
-use poly_base;
+use poly_base\Article;
 
 /**
  * XMLWrite class implementation
@@ -18,7 +18,7 @@ use poly_base;
  */
 class JSONWriter implements Writable
 {
-    public function write(\poly_base\Article $obj)
+    public function write(Article $obj)
     {
         $array = array('article' => $obj->toArray());
         return json_encode($array);

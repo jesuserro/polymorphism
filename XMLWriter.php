@@ -8,7 +8,7 @@
 
 namespace poly_write;
 
-use poly_base;
+use poly_base\Article;
 
 /**
  * XMLWrite class implementation
@@ -19,10 +19,10 @@ class XMLWriter implements Writable
     public function write(Article $obj)
     {
         $ret = '<article>';
-        $ret .= '<article>' . $obj->title . '</title>';
-        $ret .= '<author>' . $obj->author . '</author>';
-        $ret .= '<date>' . $obj->date . '</date>';
-        $ret .= '<category>' . $obj->category . '</category>';
+        $ret .= '<article>' . $obj->getTitle() . '</title>';
+        $ret .= '<author>' . $obj->getAuthor() . '</author>';
+        $ret .= '<date>' . $obj->getDate() . '</date>';
+        $ret .= '<category>' . $obj->getCategory() . '</category>';
         $ret .= '</article>';
         return $ret;
     }
