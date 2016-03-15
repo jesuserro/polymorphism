@@ -13,7 +13,7 @@ require_once 'Writable.php';
 use poly_base\Article;
 
 /**
- * XMLWrite class implementation
+ * JSONWriter class implementation
  * This class implementing the Writer interface will be sure to have write() method.
  */
 class JSONWriter implements Writable
